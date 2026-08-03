@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/Logomater.png">
+    <title>Reservas de Entrevistas - Mater Purissima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .logo {
+            width: 135px;
+            height: auto;
+            border: 0.5px solid rgb(224, 220, 220);
+            border-radius: 35px;
+            padding: 15px;
+            background-color: #ffffff;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .tarjeta-nivel {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px 20px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tarjeta-nivel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .semana-badge {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            font-size: 0.85rem;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .titulo-nivel {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .descripcion {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .boton {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            width: 80%;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="image/Logomater.png" alt="Logo Mater Purissima" class="logo">
+
+    <h1>📅 Reserva de Entrevistas - Agosto</h1>
+    <p><b>Selecciona el nivel educativo de tu hijo/a para acceder al calendario y agendar un horario.</b></p>
+
+    <div class="contenedor">
+
+        <!-- NIVEL INICIAL -->
+        <div class="tarjeta-nivel">
+            <div>
+                <span class="semana-badge">🗓️ 1.ª Semana de Agosto</span>
+                <div class="titulo-nivel">👶 Nivel Inicial</div>
+                <div class="descripcion">Salas de 3, 4 y 5 años</div>
+            </div>
+            <!--LINK DE GOOGLE CALENDAR -->
+            <a class="boton" href="https://calendar.app.google/zcFGRKJBKWLjeK779" target="_blank">Agendar Cita</a>
+        </div>
+
+        <!-- NIVEL PRIMARIO -->
+        <div class="tarjeta-nivel">
+            <div>
+                <span class="semana-badge">🗓️ 2.ª Semana de Agosto</span>
+                <div class="titulo-nivel">🎒 Nivel Primario</div>
+                <div class="descripcion">De 1.º a 6.º Grado</div>
+            </div>
+            <!--LINK DE GOOGLE CALENDAR -->
+            <a class="boton" href="https://calendar.app.google/wh1uMQnC3j7qhfHc6" target="_blank">Agendar Cita</a>
+        </div>
+
+        <!-- NIVEL SECUNDARIO -->
+        <div class="tarjeta-nivel">
+            <div>
+                <span class="semana-badge">🗓️ 3.ª y 4.ª Semana de Agosto</span>
+                <div class="titulo-nivel">🎓 Nivel Secundario</div>
+                <div class="descripcion">De 1.º a 6.º Año</div>
+            </div>
+            <!--LINK DE GOOGLE CALENDAR -->
+            <a class="boton" href="https://calendar.app.google/k1KAxQ3T2U2He2H48" target="_blank">Agendar Cita</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
